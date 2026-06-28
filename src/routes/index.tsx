@@ -55,7 +55,10 @@ function Index() {
       </Section>
 
       <Section id="senaste-recensioner">
-        <SectionHeading eyebrow="Senaste recensioner" title="Nya redaktionella granskningar" />
+        <SectionHeading
+          eyebrow="Senaste recensioner"
+          title="Nya redaktionella granskningar"
+        />
         <RelatedLinks
           items={top.slice(0, 3).map((c) => ({
             eyebrow: "Recension",
