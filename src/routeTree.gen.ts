@@ -15,6 +15,7 @@ import { Route as RecensionerLeovegasRouteImport } from './routes/recensioner.le
 import { Route as RecensionerExempelRouteImport } from './routes/recensioner.exempel'
 import { Route as JamforExempelRouteImport } from './routes/jamfor.exempel'
 import { Route as GuiderExempelRouteImport } from './routes/guider.exempel'
+import { Route as ExperimentV0Hb20RouteImport } from './routes/experiment.v0-hb20'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -46,10 +47,16 @@ const GuiderExempelRoute = GuiderExempelRouteImport.update({
   path: '/guider/exempel',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ExperimentV0Hb20Route = ExperimentV0Hb20RouteImport.update({
+  id: '/experiment/v0-hb20',
+  path: '/experiment/v0-hb20',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/experiment/v0-hb20': typeof ExperimentV0Hb20Route
   '/guider/exempel': typeof GuiderExempelRoute
   '/jamfor/exempel': typeof JamforExempelRoute
   '/recensioner/exempel': typeof RecensionerExempelRoute
@@ -58,6 +65,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/experiment/v0-hb20': typeof ExperimentV0Hb20Route
   '/guider/exempel': typeof GuiderExempelRoute
   '/jamfor/exempel': typeof JamforExempelRoute
   '/recensioner/exempel': typeof RecensionerExempelRoute
@@ -67,6 +75,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/experiment/v0-hb20': typeof ExperimentV0Hb20Route
   '/guider/exempel': typeof GuiderExempelRoute
   '/jamfor/exempel': typeof JamforExempelRoute
   '/recensioner/exempel': typeof RecensionerExempelRoute
@@ -77,6 +86,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/sitemap.xml'
+    | '/experiment/v0-hb20'
     | '/guider/exempel'
     | '/jamfor/exempel'
     | '/recensioner/exempel'
@@ -85,6 +95,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/sitemap.xml'
+    | '/experiment/v0-hb20'
     | '/guider/exempel'
     | '/jamfor/exempel'
     | '/recensioner/exempel'
@@ -93,6 +104,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/sitemap.xml'
+    | '/experiment/v0-hb20'
     | '/guider/exempel'
     | '/jamfor/exempel'
     | '/recensioner/exempel'
@@ -102,6 +114,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  ExperimentV0Hb20Route: typeof ExperimentV0Hb20Route
   GuiderExempelRoute: typeof GuiderExempelRoute
   JamforExempelRoute: typeof JamforExempelRoute
   RecensionerExempelRoute: typeof RecensionerExempelRoute
@@ -152,12 +165,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GuiderExempelRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/experiment/v0-hb20': {
+      id: '/experiment/v0-hb20'
+      path: '/experiment/v0-hb20'
+      fullPath: '/experiment/v0-hb20'
+      preLoaderRoute: typeof ExperimentV0Hb20RouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  ExperimentV0Hb20Route: ExperimentV0Hb20Route,
   GuiderExempelRoute: GuiderExempelRoute,
   JamforExempelRoute: JamforExempelRoute,
   RecensionerExempelRoute: RecensionerExempelRoute,
