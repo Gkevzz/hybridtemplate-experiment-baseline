@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /jamfor/exempel
+Disallow: /guider/exempel
+Disallow: /recensioner/exempel
