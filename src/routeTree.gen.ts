@@ -15,7 +15,6 @@ import { Route as RecensionerLeovegasRouteImport } from './routes/recensioner.le
 import { Route as RecensionerExempelRouteImport } from './routes/recensioner.exempel'
 import { Route as JamforExempelRouteImport } from './routes/jamfor.exempel'
 import { Route as GuiderExempelRouteImport } from './routes/guider.exempel'
-import { Route as ExperimentRedaktionellPrecisionRouteImport } from './routes/experiment.redaktionell-precision'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -47,17 +46,10 @@ const GuiderExempelRoute = GuiderExempelRouteImport.update({
   path: '/guider/exempel',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ExperimentRedaktionellPrecisionRoute =
-  ExperimentRedaktionellPrecisionRouteImport.update({
-    id: '/experiment/redaktionell-precision',
-    path: '/experiment/redaktionell-precision',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/experiment/redaktionell-precision': typeof ExperimentRedaktionellPrecisionRoute
   '/guider/exempel': typeof GuiderExempelRoute
   '/jamfor/exempel': typeof JamforExempelRoute
   '/recensioner/exempel': typeof RecensionerExempelRoute
@@ -66,7 +58,6 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/experiment/redaktionell-precision': typeof ExperimentRedaktionellPrecisionRoute
   '/guider/exempel': typeof GuiderExempelRoute
   '/jamfor/exempel': typeof JamforExempelRoute
   '/recensioner/exempel': typeof RecensionerExempelRoute
@@ -76,7 +67,6 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/experiment/redaktionell-precision': typeof ExperimentRedaktionellPrecisionRoute
   '/guider/exempel': typeof GuiderExempelRoute
   '/jamfor/exempel': typeof JamforExempelRoute
   '/recensioner/exempel': typeof RecensionerExempelRoute
@@ -87,7 +77,6 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/sitemap.xml'
-    | '/experiment/redaktionell-precision'
     | '/guider/exempel'
     | '/jamfor/exempel'
     | '/recensioner/exempel'
@@ -96,7 +85,6 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/sitemap.xml'
-    | '/experiment/redaktionell-precision'
     | '/guider/exempel'
     | '/jamfor/exempel'
     | '/recensioner/exempel'
@@ -105,7 +93,6 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/sitemap.xml'
-    | '/experiment/redaktionell-precision'
     | '/guider/exempel'
     | '/jamfor/exempel'
     | '/recensioner/exempel'
@@ -115,7 +102,6 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
-  ExperimentRedaktionellPrecisionRoute: typeof ExperimentRedaktionellPrecisionRoute
   GuiderExempelRoute: typeof GuiderExempelRoute
   JamforExempelRoute: typeof JamforExempelRoute
   RecensionerExempelRoute: typeof RecensionerExempelRoute
@@ -166,20 +152,12 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GuiderExempelRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/experiment/redaktionell-precision': {
-      id: '/experiment/redaktionell-precision'
-      path: '/experiment/redaktionell-precision'
-      fullPath: '/experiment/redaktionell-precision'
-      preLoaderRoute: typeof ExperimentRedaktionellPrecisionRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
-  ExperimentRedaktionellPrecisionRoute: ExperimentRedaktionellPrecisionRoute,
   GuiderExempelRoute: GuiderExempelRoute,
   JamforExempelRoute: JamforExempelRoute,
   RecensionerExempelRoute: RecensionerExempelRoute,
