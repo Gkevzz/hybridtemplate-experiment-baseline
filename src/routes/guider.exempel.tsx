@@ -12,10 +12,7 @@ import { RelatedLinks } from "@/components/sections/RelatedLinks";
 import { VerifiedStamp } from "@/components/ui/verified-stamp";
 import { GUIDES } from "@/data/casinos";
 
-const CRUMBS = [
-  { label: "Guider", to: "/" },
-  { label: "Exempelguide" },
-];
+const CRUMBS = [{ label: "Guider", to: "/" }, { label: "Exempelguide" }];
 
 const TOC = [
   { id: "introduktion", label: "Introduktion" },
@@ -61,39 +58,32 @@ function GuideTemplate() {
 
           <article className="space-y-12">
             <section id="introduktion" className="scroll-mt-24">
-              <h2 className="text-2xl font-semibold sm:text-3xl">
-                Introduktion
-              </h2>
+              <h2 className="text-2xl font-semibold sm:text-3xl">Introduktion</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Detta är en platshållare. Det riktiga innehållet läggs till
-                senare. Introduktionen ska sätta kontext, förklara varför ämnet
-                är viktigt och ge läsaren en tydlig förväntan om vad guiden
-                kommer att gå igenom.
+                Detta är en platshållare. Det riktiga innehållet läggs till senare. Introduktionen
+                ska sätta kontext, förklara varför ämnet är viktigt och ge läsaren en tydlig
+                förväntan om vad guiden kommer att gå igenom.
               </p>
             </section>
 
             <section id="forklaringar" className="scroll-mt-24">
-              <h2 className="text-2xl font-semibold sm:text-3xl">
-                Förklaringar
-              </h2>
+              <h2 className="text-2xl font-semibold sm:text-3xl">Förklaringar</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Detta är en platshållare. Förklaringar bryts ner i tydliga
-                underrubriker med kortfattad brödtext.
+                Detta är en platshållare. Förklaringar bryts ner i tydliga underrubriker med
+                kortfattad brödtext.
               </p>
             </section>
 
             <section id="exempel" className="scroll-mt-24">
               <h2 className="text-2xl font-semibold sm:text-3xl">Exempel</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Detta är en platshållare. Konkreta exempel placeras här för att
-                göra abstrakta begrepp greppbara.
+                Detta är en platshållare. Konkreta exempel placeras här för att göra abstrakta
+                begrepp greppbara.
               </p>
             </section>
 
             <section id="vanliga-fragor" className="scroll-mt-24">
-              <h2 className="text-2xl font-semibold sm:text-3xl">
-                Vanliga frågor
-              </h2>
+              <h2 className="text-2xl font-semibold sm:text-3xl">Vanliga frågor</h2>
               <div className="mt-4 rounded-2xl border border-border/70 bg-card p-2 sm:p-4">
                 <Faq />
               </div>

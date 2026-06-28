@@ -118,8 +118,7 @@ export const CASINOS: Casino[] = [
   info: NEUTRAL_INFO,
   trust: NEUTRAL_TRUST,
   verdict: "bra" as Verdict,
-  comment:
-    "Redaktionellt omdöme tillkommer. Innehållet på den här sidan är en platshållare.",
+  comment: "Redaktionellt omdöme tillkommer. Innehållet på den här sidan är en platshållare.",
   verifiedAt: null,
 }));
 
@@ -139,14 +138,12 @@ export const GUIDES: Guide[] = [
   {
     id: "bonusar",
     title: "Så läser du bonusvillkor",
-    excerpt:
-      "Förstå omsättningskrav, maxinsats och tidsgränser innan du tar emot en bonus.",
+    excerpt: "Förstå omsättningskrav, maxinsats och tidsgränser innan du tar emot en bonus.",
   },
   {
     id: "uttag",
     title: "Snabba och säkra uttag",
-    excerpt:
-      "Vilka faktorer påverkar uttagstiden och vad du bör kontrollera innan första uttaget.",
+    excerpt: "Vilka faktorer påverkar uttagstiden och vad du bör kontrollera innan första uttaget.",
   },
 ];
 

@@ -21,9 +21,8 @@ export function Hero() {
             Sveriges mest transparenta jämförelse av casinon med svensk licens.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            HybridBonus granskar svenska casinon med fokus på trygghet, villkor
-            och faktisk användarupplevelse. Inga falska erbjudanden, inga
-            uppblåsta omdömen.
+            HybridBonus granskar svenska casinon med fokus på trygghet, villkor och faktisk
+            användarupplevelse. Inga falska erbjudanden, inga uppblåsta omdömen.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

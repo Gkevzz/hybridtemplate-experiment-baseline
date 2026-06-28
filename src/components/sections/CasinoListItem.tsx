@@ -2,26 +2,13 @@ import { InfoBoxGrid } from "@/components/ui/info-box";
 import { Rating } from "@/components/ui/rating";
 import { VerdictPill } from "@/components/ui/verdict-pill";
 import { Button } from "@/components/ui/button";
-import {
-  ShieldCheck,
-  Gift,
-  Coins,
-  Percent,
-  Clock,
-  Headphones,
-} from "lucide-react";
+import { ShieldCheck, Gift, Coins, Percent, Clock, Headphones } from "lucide-react";
 import type { Casino } from "@/data/casinos";
 import { VERIFICATION_PLACEHOLDER } from "@/data/casinos";
 
 const ICONS = [ShieldCheck, Gift, Coins, Percent, Clock, Headphones];
 
-export function CasinoListItem({
-  casino,
-  index,
-}: {
-  casino: Casino;
-  index: number;
-}) {
+export function CasinoListItem({ casino, index }: { casino: Casino; index: number }) {
   const enriched = casino.info.map((item, i) => ({
     ...item,
     icon: ICONS[i % ICONS.length],
@@ -38,12 +25,8 @@ export function CasinoListItem({
             #{index + 1}
           </div>
           <div className="min-w-0">
-            <h3 className="truncate text-lg font-semibold sm:text-xl">
-              {casino.name}
-            </h3>
-            <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
-              {casino.tagline}
-            </p>
+            <h3 className="truncate text-lg font-semibold sm:text-xl">{casino.name}</h3>
+            <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">{casino.tagline}</p>
           </div>
         </div>
         <div className="flex shrink-0 flex-col items-end gap-2">

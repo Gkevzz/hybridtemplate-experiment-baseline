@@ -1,14 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import {
-  Shield,
-  Zap,
-  Smartphone,
-  Banknote,
-  LayoutGrid,
-  Video,
-  Gift,
-  BookOpen,
-} from "lucide-react";
+import { Shield, Zap, Smartphone, Banknote, LayoutGrid, Video, Gift, BookOpen } from "lucide-react";
 
 export interface Category {
   key: string;
@@ -38,9 +29,7 @@ export function CategoryCard({ category }: { category: Category }) {
       <span className="grid h-10 w-10 place-items-center rounded-xl bg-primary/10 text-primary">
         <Icon className="h-5 w-5" strokeWidth={1.75} />
       </span>
-      <span className="text-sm font-semibold text-foreground">
-        {category.title}
-      </span>
+      <span className="text-sm font-semibold text-foreground">{category.title}</span>
     </a>
   );
 }

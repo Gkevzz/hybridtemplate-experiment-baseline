@@ -15,19 +15,9 @@ import { Faq } from "@/components/sections/Faq";
 import { SourcesList } from "@/components/sections/SourcesList";
 import { RelatedLinks } from "@/components/sections/RelatedLinks";
 import { CASINOS } from "@/data/casinos";
-import {
-  ShieldCheck,
-  Gift,
-  Coins,
-  Percent,
-  Clock,
-  Headphones,
-} from "lucide-react";
+import { ShieldCheck, Gift, Coins, Percent, Clock, Headphones } from "lucide-react";
 
-const CRUMBS = [
-  { label: "Recensioner", to: "/" },
-  { label: "Exempelcasino" },
-];
+const CRUMBS = [{ label: "Recensioner", to: "/" }, { label: "Exempelcasino" }];
 
 export const Route = createFileRoute("/recensioner/exempel")({
   head: () => ({
@@ -74,9 +64,8 @@ function ReviewTemplate() {
             <div>
               <SectionHeading title="Snabb sammanfattning" />
               <p className="text-base leading-relaxed text-muted-foreground">
-                Detta är en platshållare. Sammanfattningen av {casino.name}{" "}
-                kommer att innehålla redaktionens kortfattade omdöme om
-                bonusvärde, uttagstid, spelutbud och övergripande
+                Detta är en platshållare. Sammanfattningen av {casino.name} kommer att innehålla
+                redaktionens kortfattade omdöme om bonusvärde, uttagstid, spelutbud och övergripande
                 användarupplevelse.
               </p>
             </div>
@@ -130,21 +119,14 @@ function ReviewTemplate() {
           </div>
 
           <aside className="space-y-6 lg:sticky lg:top-24">
-            <TrustProfile
-              data={casino.trust}
-              verdict={casino.verdict}
-              comment={casino.comment}
-            />
+            <TrustProfile data={casino.trust} verdict={casino.verdict} comment={casino.comment} />
             <VerifiedStamp />
           </aside>
         </div>
       </Section>
 
       <Section id="relaterat" className="bg-surface/30">
-        <SectionHeading
-          eyebrow="Relaterat"
-          title="Liknande recensioner"
-        />
+        <SectionHeading eyebrow="Relaterat" title="Liknande recensioner" />
         <RelatedLinks
           items={CASINOS.slice(1, 4).map((c) => ({
             eyebrow: "Recension",

@@ -2,13 +2,7 @@ import { ShieldCheck } from "lucide-react";
 import { VERIFICATION_PLACEHOLDER } from "@/data/casinos";
 import { cn } from "@/lib/utils";
 
-export function VerifiedStamp({
-  date,
-  className,
-}: {
-  date?: string | null;
-  className?: string;
-}) {
+export function VerifiedStamp({ date, className }: { date?: string | null; className?: string }) {
   return (
     <p
       className={cn(

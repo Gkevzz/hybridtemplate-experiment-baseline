@@ -41,14 +41,8 @@ export function Faq({
     <div className={className}>
       <Accordion type="single" collapsible className="w-full">
         {items.map((it, i) => (
-          <AccordionItem
-            key={`${it.q}-${i}`}
-            value={`item-${i}`}
-            className="border-border/60"
-          >
-            <AccordionTrigger className="text-left text-base font-medium">
-              {it.q}
-            </AccordionTrigger>
+          <AccordionItem key={`${it.q}-${i}`} value={`item-${i}`} className="border-border/60">
+            <AccordionTrigger className="text-left text-base font-medium">{it.q}</AccordionTrigger>
             <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
               {it.a}
             </AccordionContent>

@@ -10,13 +10,7 @@ export interface PageHeroProps {
   className?: string;
 }
 
-export function PageHero({
-  eyebrow,
-  title,
-  lead,
-  meta,
-  className,
-}: PageHeroProps) {
+export function PageHero({ eyebrow, title, lead, meta, className }: PageHeroProps) {
   return (
     <section className={cn("border-b border-border/60", className)}>
       <Container className="py-10 sm:py-14 lg:py-20">
