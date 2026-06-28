@@ -1,6 +1,6 @@
-> Mirror snapshot of `mem://editorial/structures.md`.
-> Canonical source inside Lovable: `mem://editorial/structures.md`.
-> If this file conflicts with Lovable memory, Lovable memory wins.
+> Source-project origin: Exported from Lovable memory at `mem://editorial/structures.md`.
+> Template status: This checked-in file is a repo-local snapshot and is not actively synced with Lovable unless explicitly configured.
+> Template usage: When working outside Lovable, treat this file as the best available local reference. Do not make governance-changing edits casually.
 > Snapshot date: 2026-06-28.
 
 ---
