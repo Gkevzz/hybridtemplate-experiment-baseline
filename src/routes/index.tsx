@@ -41,9 +41,9 @@ function Index() {
         <CategoryGrid />
       </Section>
 
-      <Section id="topplista">
+      <Section id="jamforelse">
         <SectionHeading
-          eyebrow="Topplista"
+          eyebrow="Jämförelse"
           title="Granskade casinon"
           lead="Begränsat urval. Redaktionellt utvalda och regelbundet uppdaterade."
         />
