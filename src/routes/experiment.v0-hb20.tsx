@@ -11,6 +11,7 @@ import {
   CalendarClock,
   Layers,
   CheckCircle2,
+  FlaskConical,
 } from "lucide-react";
 
 import { SiteLayout } from "@/components/layout/SiteLayout";
@@ -27,19 +28,37 @@ import { ResponsibleGamblingBlock } from "@/components/sections/ResponsibleGambl
 import { SourcesList } from "@/components/sections/SourcesList";
 import { buildCanonical, buildMeta } from "@/lib/seo/meta";
 
-export const Route = createFileRoute("/hybridbonus-2")({
+export const Route = createFileRoute("/experiment/v0-hb20")({
   head: () => ({
     meta: buildMeta({
-      title: "HybridBonus 2.0 – Redaktionell precision (prototyp)",
+      title: "HybridBonus 2.0 – Redaktionell precision (experiment)",
       description:
-        "Visuell prototyp för HybridBonus 2.0. Redaktionell precision utan rangordning – ansvarsfullt spelande, jämförelse, bonusvillkor, metodik och källtransparens.",
-      path: "/hybridbonus-2",
+        "Isolerat, icke-produktivt experiment för HybridBonus 2.0. Redaktionell precision utan rangordning – ansvarsfullt spelande, jämförelse, bonusvillkor, metodik och källtransparens. Endast platshållardata.",
+      path: "/experiment/v0-hb20",
       noindex: true,
     }),
-    links: [buildCanonical("/hybridbonus-2")],
+    links: [buildCanonical("/experiment/v0-hb20")],
   }),
   component: HybridBonusTwo,
 });
+
+/* -------------------------------------------------------------------------- */
+/* Experimentnotis                                                            */
+/* -------------------------------------------------------------------------- */
+
+function ExperimentBand() {
+  return (
+    <div className="border-b border-border/60 bg-primary/5">
+      <Container className="flex items-center gap-2 py-2 text-xs text-muted-foreground">
+        <FlaskConical className="h-3.5 w-3.5 shrink-0 text-primary" aria-hidden />
+        <span>
+          <span className="font-medium text-foreground">Experiment</span> · isolerad prototyp
+          (/experiment/v0-hb20) · ej produktion · endast platshållardata
+        </span>
+      </Container>
+    </div>
+  );
+}
 
 /* -------------------------------------------------------------------------- */
 /* Tidig banner om ansvarsfullt spelande                                      */
@@ -427,6 +446,8 @@ function TransparencySection() {
 function HybridBonusTwo() {
   return (
     <SiteLayout>
+      <ExperimentBand />
+
       <ResponsibleGamblingBand />
 
       <EditorialHero />
