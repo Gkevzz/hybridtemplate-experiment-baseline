@@ -25,12 +25,12 @@ Vite serves on `http://localhost:8080`.
 2. `docs/handoff/implementation-boundaries.md` — what is allowed and forbidden to change.
 3. `docs/constitution/README.md` — reading order for the constitutional documents.
 
-## Lovable sync
+## Lovable origin
 
-This project is bidirectionally synced with [Lovable](https://lovable.dev). Commits pushed to the connected branch appear in the Lovable editor; edits made in Lovable push back to this repo. See `AGENTS.md` for git history rules.
+This repository was created from a [Lovable](https://lovable.dev)-originated project snapshot. It is not assumed to be actively connected to Lovable unless explicitly configured. See `AGENTS.md` for template-safe git history guidance.
 
 The authoritative version of every constitutional document lives in **Lovable project memory (`mem://...`)**. Files under `docs/constitution/` are read-only snapshots taken on the date shown in each file header — they may drift from the canonical `mem://` source over time.
 
 ## Environment
 
-See `.env.example`. No environment variables are required for local dev today. Real values are managed in Lovable's environment and are never committed.
+See `.env.example`. No environment variables are required for local dev today. If this template is connected to Lovable, real values should be managed in Lovable's environment and never committed.
