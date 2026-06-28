@@ -44,7 +44,7 @@ Governance priority: **Operating System > Engineering > Editorial > Design.**
 ## Files to leave alone
 
 - `.lovable/` — Lovable workspace state.
-- `AGENTS.md` — Lovable's git history rules; don't force-push or rewrite published history.
+- `AGENTS.md` — template-safe git history guidance for Lovable-originated snapshots; don't force-push or rewrite published history.
 - `src/routeTree.gen.ts` — generated.
 - Anything under `docs/constitution/` — read-only mirror; see `implementation-boundaries.md`.
 
