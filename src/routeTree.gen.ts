@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as Hybridbonus2RouteImport } from './routes/hybridbonus-2'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as RecensionerLeovegasRouteImport } from './routes/recensioner.leovegas'
 import { Route as RecensionerExempelRouteImport } from './routes/recensioner.exempel'
@@ -19,6 +20,11 @@ import { Route as GuiderExempelRouteImport } from './routes/guider.exempel'
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Hybridbonus2Route = Hybridbonus2RouteImport.update({
+  id: '/hybridbonus-2',
+  path: '/hybridbonus-2',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -49,6 +55,7 @@ const GuiderExempelRoute = GuiderExempelRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/hybridbonus-2': typeof Hybridbonus2Route
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/guider/exempel': typeof GuiderExempelRoute
   '/jamfor/exempel': typeof JamforExempelRoute
@@ -57,6 +64,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/hybridbonus-2': typeof Hybridbonus2Route
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/guider/exempel': typeof GuiderExempelRoute
   '/jamfor/exempel': typeof JamforExempelRoute
@@ -66,6 +74,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/hybridbonus-2': typeof Hybridbonus2Route
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/guider/exempel': typeof GuiderExempelRoute
   '/jamfor/exempel': typeof JamforExempelRoute
@@ -76,6 +85,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/hybridbonus-2'
     | '/sitemap.xml'
     | '/guider/exempel'
     | '/jamfor/exempel'
@@ -84,6 +94,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/hybridbonus-2'
     | '/sitemap.xml'
     | '/guider/exempel'
     | '/jamfor/exempel'
@@ -92,6 +103,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/hybridbonus-2'
     | '/sitemap.xml'
     | '/guider/exempel'
     | '/jamfor/exempel'
@@ -101,6 +113,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  Hybridbonus2Route: typeof Hybridbonus2Route
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   GuiderExempelRoute: typeof GuiderExempelRoute
   JamforExempelRoute: typeof JamforExempelRoute
@@ -115,6 +128,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hybridbonus-2': {
+      id: '/hybridbonus-2'
+      path: '/hybridbonus-2'
+      fullPath: '/hybridbonus-2'
+      preLoaderRoute: typeof Hybridbonus2RouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -157,6 +177,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  Hybridbonus2Route: Hybridbonus2Route,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   GuiderExempelRoute: GuiderExempelRoute,
   JamforExempelRoute: JamforExempelRoute,
