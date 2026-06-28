@@ -53,20 +53,13 @@ export function TrustProfile({
 
   if (!pending && !data) {
     if (import.meta.env.DEV) {
-      console.warn(
-        "<TrustProfile /> requires `data` when state is 'verified'.",
-      );
+      console.warn("<TrustProfile /> requires `data` when state is 'verified'.");
     }
     return null;
   }
 
   return (
-    <div
-      className={cn(
-        "rounded-2xl border border-border/70 bg-surface/60 p-5 sm:p-6",
-        className,
-      )}
-    >
+    <div className={cn("rounded-2xl border border-border/70 bg-surface/60 p-5 sm:p-6", className)}>
       <div className="mb-4 flex items-center justify-between gap-3">
         <h3 className="font-display text-sm font-semibold uppercase tracking-[0.14em] text-muted-foreground">
           Trust Profile
@@ -76,16 +69,11 @@ export function TrustProfile({
 
       <dl className="divide-y divide-border/60">
         {ROWS.map(({ key, label }) => (
-          <div
-            key={key}
-            className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-3"
-          >
+          <div key={key} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-3">
             <dt className="min-w-0 text-sm text-foreground/90">{label}</dt>
             <dd className="shrink-0">
               {pending ? (
-                <span className="text-xs text-muted-foreground">
-                  Bedömning tillkommer
-                </span>
+                <span className="text-xs text-muted-foreground">Bedömning tillkommer</span>
               ) : (
                 <Rating value={data![key]} />
               )}

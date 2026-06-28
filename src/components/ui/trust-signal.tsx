@@ -11,10 +11,7 @@ const ITEMS = [
 export function TrustSignalRow({ className }: { className?: string }) {
   return (
     <ul
-      className={cn(
-        "flex flex-wrap items-center gap-2 text-xs text-muted-foreground",
-        className,
-      )}
+      className={cn("flex flex-wrap items-center gap-2 text-xs text-muted-foreground", className)}
     >
       {ITEMS.map(({ icon: Icon, label }) => (
         <li

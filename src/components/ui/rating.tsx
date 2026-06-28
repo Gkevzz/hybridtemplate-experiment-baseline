@@ -17,13 +17,7 @@ export interface RatingProps {
   size?: "sm" | "md";
 }
 
-export function Rating({
-  value,
-  max = 5,
-  label,
-  className,
-  size = "md",
-}: RatingProps) {
+export function Rating({ value, max = 5, label, className, size = "md" }: RatingProps) {
   const clamped = Math.max(0, Math.min(value, max));
   const stars = Array.from({ length: max }, (_, i) => i < clamped);
   const dim = size === "sm" ? "h-3.5 w-3.5" : "h-4 w-4";
@@ -39,9 +33,7 @@ export function Rating({
           key={i}
           className={cn(
             dim,
-            filled
-              ? "fill-primary stroke-primary"
-              : "fill-transparent stroke-muted-foreground/40",
+            filled ? "fill-primary stroke-primary" : "fill-transparent stroke-muted-foreground/40",
           )}
           strokeWidth={1.5}
         />

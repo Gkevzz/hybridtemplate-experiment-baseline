@@ -18,10 +18,7 @@ export function Toc({ items }: { items: TocItem[] }) {
             <span className="w-5 shrink-0 text-muted-foreground/70 tabular-nums">
               {String(i + 1).padStart(2, "0")}
             </span>
-            <a
-              href={`#${it.id}`}
-              className="text-foreground/90 underline-offset-4 hover:underline"
-            >
+            <a href={`#${it.id}`} className="text-foreground/90 underline-offset-4 hover:underline">
               {it.label}
             </a>
           </li>

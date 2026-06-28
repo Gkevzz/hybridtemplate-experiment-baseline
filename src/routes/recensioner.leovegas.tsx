@@ -35,10 +35,7 @@ import { LEOVEGAS } from "@/data/leovegas";
  * - NO Review / FAQPage / Article / Product / SearchAction schema.
  */
 
-const CRUMBS = [
-  { label: "Recensioner", to: "/" },
-  { label: "LeoVegas" },
-];
+const CRUMBS = [{ label: "Recensioner", to: "/" }, { label: "LeoVegas" }];
 
 export const Route = createFileRoute("/recensioner/leovegas")({
   head: () => ({
@@ -71,11 +68,10 @@ function LeoVegasReview() {
             <div>
               <SectionHeading title="Snabb sammanfattning" />
               <p className="text-base leading-relaxed text-muted-foreground">
-                Den här recensionen är under arbete. När redaktionen har
-                verifierat licens, bonusvillkor, betalningsmetoder,
-                uttagstider, spelutbud, mobilupplevelse och kundsupport mot
-                officiella källor publiceras innehållet här tillsammans med
-                en transparent Trust Profile och fullständig källista.
+                Den här recensionen är under arbete. När redaktionen har verifierat licens,
+                bonusvillkor, betalningsmetoder, uttagstider, spelutbud, mobilupplevelse och
+                kundsupport mot officiella källor publiceras innehållet här tillsammans med en
+                transparent Trust Profile och fullständig källista.
               </p>
             </div>
 
@@ -120,8 +116,8 @@ function LeoVegasReview() {
                 <SectionHeading title="Omsättningsvillkor" />
                 <div className="rounded-2xl border border-border/70 bg-card p-5 sm:p-6">
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    Omsättningskrav: {c.welcomeBonus.wageringX}x. Se
-                    fullständiga villkor hos operatören.
+                    Omsättningskrav: {c.welcomeBonus.wageringX}x. Se fullständiga villkor hos
+                    operatören.
                   </p>
                 </div>
               </div>
@@ -140,13 +136,8 @@ function LeoVegasReview() {
                 <div className="rounded-2xl border border-border/70 bg-card p-5 sm:p-6 text-sm text-muted-foreground">
                   <p>
                     Typisk uttagstid:{" "}
-                    <span className="font-medium text-foreground">
-                      {c.withdrawalTime.typical}
-                    </span>
-                    {c.withdrawalTime.range
-                      ? ` (intervall: ${c.withdrawalTime.range})`
-                      : ""}
-                    .
+                    <span className="font-medium text-foreground">{c.withdrawalTime.typical}</span>
+                    {c.withdrawalTime.range ? ` (intervall: ${c.withdrawalTime.range})` : ""}.
                   </p>
                 </div>
               </div>
@@ -159,20 +150,14 @@ function LeoVegasReview() {
                   {c.games.totalApprox !== undefined && (
                     <p>
                       Antal spel (cirka):{" "}
-                      <span className="font-medium text-foreground">
-                        {c.games.totalApprox}
-                      </span>
+                      <span className="font-medium text-foreground">{c.games.totalApprox}</span>
                     </p>
                   )}
                   {c.games.providers.length > 0 && (
-                    <p className="mt-2">
-                      Leverantörer: {c.games.providers.join(", ")}
-                    </p>
+                    <p className="mt-2">Leverantörer: {c.games.providers.join(", ")}</p>
                   )}
                   {c.games.categories.length > 0 && (
-                    <p className="mt-2">
-                      Kategorier: {c.games.categories.join(", ")}
-                    </p>
+                    <p className="mt-2">Kategorier: {c.games.categories.join(", ")}</p>
                   )}
                 </div>
               </div>
@@ -184,17 +169,10 @@ function LeoVegasReview() {
                 <div className="rounded-2xl border border-border/70 bg-card p-5 sm:p-6 text-sm text-muted-foreground">
                   <ul className="space-y-1">
                     <li>iOS-app: {c.mobile.iosApp ? "Ja" : "Nej"}</li>
-                    <li>
-                      Android-app: {c.mobile.androidApp ? "Ja" : "Nej"}
-                    </li>
-                    <li>
-                      Webboptimerad:{" "}
-                      {c.mobile.browserOptimised ? "Ja" : "Nej"}
-                    </li>
+                    <li>Android-app: {c.mobile.androidApp ? "Ja" : "Nej"}</li>
+                    <li>Webboptimerad: {c.mobile.browserOptimised ? "Ja" : "Nej"}</li>
                   </ul>
-                  {c.mobile.notes && (
-                    <p className="mt-3">{c.mobile.notes}</p>
-                  )}
+                  {c.mobile.notes && <p className="mt-3">{c.mobile.notes}</p>}
                 </div>
               </div>
             )}
@@ -205,9 +183,7 @@ function LeoVegasReview() {
                 <div className="rounded-2xl border border-border/70 bg-card p-5 sm:p-6 text-sm text-muted-foreground">
                   <p>Kanaler: {c.support.channels.join(", ")}</p>
                   <p className="mt-2">Öppettider: {c.support.hours}</p>
-                  <p className="mt-2">
-                    Svensk support: {c.support.swedish ? "Ja" : "Nej"}
-                  </p>
+                  <p className="mt-2">Svensk support: {c.support.swedish ? "Ja" : "Nej"}</p>
                 </div>
               </div>
             )}

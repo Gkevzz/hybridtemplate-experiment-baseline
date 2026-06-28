@@ -61,10 +61,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
                   )}
                   <meta itemProp="position" content={String(i + 1)} />
                   {!isLast && (
-                    <ChevronRight
-                      className="h-3.5 w-3.5 text-muted-foreground/60"
-                      aria-hidden
-                    />
+                    <ChevronRight className="h-3.5 w-3.5 text-muted-foreground/60" aria-hidden />
                   )}
                 </li>
               );
