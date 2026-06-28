@@ -41,9 +41,9 @@ function Index() {
         <CategoryGrid />
       </Section>
 
-      <Section id="topplista">
+      <Section id="jamforelse">
         <SectionHeading
-          eyebrow="Topplista"
+          eyebrow="Jämförelse"
           title="Granskade casinon"
           lead="Begränsat urval. Redaktionellt utvalda och regelbundet uppdaterade."
         />
@@ -55,10 +55,7 @@ function Index() {
       </Section>
 
       <Section id="senaste-recensioner">
-        <SectionHeading
-          eyebrow="Senaste recensioner"
-          title="Nya redaktionella granskningar"
-        />
+        <SectionHeading eyebrow="Senaste recensioner" title="Nya redaktionella granskningar" />
         <RelatedLinks
           items={top.slice(0, 3).map((c) => ({
             eyebrow: "Recension",

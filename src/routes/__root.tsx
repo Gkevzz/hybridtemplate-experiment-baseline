@@ -12,11 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SITE_LOCALE, SITE_NAME } from "../lib/seo/site";
-import {
-  organizationJsonLd,
-  script,
-  websiteJsonLd,
-} from "../lib/seo/jsonld";
+import { organizationJsonLd, script, websiteJsonLd } from "../lib/seo/jsonld";
 
 function NotFoundComponent() {
   return (
@@ -100,12 +96,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: SITE_NAME },
       { property: "og:locale", content: SITE_LOCALE },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "HybridBonus – Jämförelse av svenska licensierade casinon" },
-      { name: "description", content: "Jämför svenska licensierade casinon, bonusar och villkor. Opartiska recensioner, uppdaterade erbjudanden och hjälp att hitta det bästa Casinot för dig." },
-      { property: "og:description", content: "Jämför svenska licensierade casinon, bonusar och villkor. Opartiska recensioner, uppdaterade erbjudanden och hjälp att hitta det bästa Casinot för dig." },
-      { name: "twitter:description", content: "Jämför svenska licensierade casinon, bonusar och villkor. Opartiska recensioner, uppdaterade erbjudanden och hjälp att hitta det bästa Casinot för dig." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/K9uUMqKRgVYgx8hEUehhVKgqaw03/social-images/social-1782579048511-ChatGPT_Image_27_juni_2026_18_50_35.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/K9uUMqKRgVYgx8hEUehhVKgqaw03/social-images/social-1782579048511-ChatGPT_Image_27_juni_2026_18_50_35.webp" },
+      {
+        name: "twitter:title",
+        content: "HybridBonus – Jämförelse av svenska licensierade casinon",
+      },
+      {
+        name: "description",
+        content:
+          "Jämför licensierade casinon, villkor och redaktionella granskningar med tydligare beslutsstöd.",
+      },
+      {
+        property: "og:description",
+        content:
+          "Jämför licensierade casinon, villkor och redaktionella granskningar med tydligare beslutsstöd.",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Jämför licensierade casinon, villkor och redaktionella granskningar med tydligare beslutsstöd.",
+      },
     ],
     links: [
       {
