@@ -15,7 +15,7 @@ HybridBonus is a Swedish editorial decision platform for licensed online casinos
 
 ## Reading order
 
-Before changing anything substantive, read the constitution snapshots in this order:
+Before changing anything substantive, read the repo-local constitution snapshots in this order. These checked-in files were exported from Lovable memory at `mem://...` and are not actively synced with Lovable unless explicitly configured:
 
 1. `docs/constitution/00-operating-system.md` — highest priority. Overrides everything below.
 2. `docs/constitution/10-editorial-constitution.md`
@@ -46,7 +46,7 @@ Governance priority: **Operating System > Engineering > Editorial > Design.**
 - `.lovable/` — Lovable workspace state.
 - `AGENTS.md` — template-safe git history guidance for Lovable-originated snapshots; don't force-push or rewrite published history.
 - `src/routeTree.gen.ts` — generated.
-- Anything under `docs/constitution/` — read-only mirror; see `implementation-boundaries.md`.
+- Anything under `docs/constitution/` — repo-local template snapshots exported from Lovable memory; do not make governance-changing edits casually. See `implementation-boundaries.md`.
 
 ## When in doubt
 

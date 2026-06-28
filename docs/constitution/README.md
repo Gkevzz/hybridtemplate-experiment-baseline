@@ -1,12 +1,13 @@
 # Constitution Snapshots
 
-Read-only mirror of HybridBonus constitutional documents.
+Repo-local template snapshots of HybridBonus constitutional documents.
 
-**Canonical source:** Lovable project memory (`mem://...`).
+**Source-project origin:** Exported from Lovable memory at `mem://...`.
+**Template status:** These checked-in files are repo-local snapshots and are not actively synced with Lovable unless explicitly configured.
+**Template usage:** When working outside Lovable, treat these files as the best available local reference. Do not make governance-changing edits casually.
 **Snapshot date:** 2026-06-28.
-**If these files conflict with Lovable memory, Lovable memory wins.**
 
-These snapshots exist so that external AI coding tools (Cursor, Claude Code, Codex, Aider, etc.) and human contributors working outside Lovable can read the constitution without access to `mem://`. They are not authoritative governance.
+These snapshots exist so that external AI coding tools (Cursor, Claude Code, Codex, Aider, etc.) and human contributors working outside Lovable can read the constitution without access to `mem://`.
 
 ## Reading order
 
