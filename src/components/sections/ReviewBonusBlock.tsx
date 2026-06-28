@@ -27,16 +27,13 @@ export function ReviewBonusBlock({ bonus }: { bonus: WelcomeBonus }) {
             className="grid grid-cols-[minmax(0,1fr)_auto] gap-4 px-5 py-3 sm:px-6"
           >
             <dt className="text-sm text-muted-foreground">{r.label}</dt>
-            <dd className="text-sm font-medium text-foreground">
-              {String(r.value)}
-            </dd>
+            <dd className="text-sm font-medium text-foreground">{String(r.value)}</dd>
           </div>
         ))}
       </dl>
       <div className="border-t border-border/60 bg-surface/40 px-5 py-4 text-xs leading-relaxed text-muted-foreground sm:px-6">
         <p>
-          18+. Spela ansvarsfullt. Omsättningskrav gäller. Se fullständiga
-          villkor hos operatören.
+          18+. Spela ansvarsfullt. Omsättningskrav gäller. Se fullständiga villkor hos operatören.
         </p>
         <p className="mt-2">
           Källa:{" "}

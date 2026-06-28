@@ -12,19 +12,9 @@ import { RelatedLinks } from "@/components/sections/RelatedLinks";
 import { Button } from "@/components/ui/button";
 import { CASINOS, GUIDES } from "@/data/casinos";
 
-const CRUMBS = [
-  { label: "Jämför", to: "/" },
-  { label: "Exempeljämförelse" },
-];
+const CRUMBS = [{ label: "Jämför", to: "/" }, { label: "Exempeljämförelse" }];
 
-const FILTERS = [
-  "Alla",
-  "Svensk licens",
-  "Snabba uttag",
-  "Trustly",
-  "Swish",
-  "Live Casino",
-];
+const FILTERS = ["Alla", "Svensk licens", "Snabba uttag", "Trustly", "Swish", "Live Casino"];
 
 export const Route = createFileRoute("/jamfor/exempel")({
   head: () => ({
@@ -72,10 +62,7 @@ function CompareTemplate() {
       </Section>
 
       <Section className="bg-surface/30">
-        <SectionHeading
-          eyebrow="Sammanfattningar"
-          title="Kort om varje casino"
-        />
+        <SectionHeading eyebrow="Sammanfattningar" title="Kort om varje casino" />
         <div className="flex flex-col gap-5">
           {CASINOS.slice(0, 3).map((c, i) => (
             <CasinoListItem key={c.id} casino={c} index={i} />

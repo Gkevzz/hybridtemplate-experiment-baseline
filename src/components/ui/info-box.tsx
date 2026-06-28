@@ -25,28 +25,15 @@ export function InfoBox({ icon: Icon, label, value, className }: InfoBoxProps) {
         <p className="text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
           {label}
         </p>
-        <p className="mt-1 truncate text-sm font-semibold text-foreground">
-          {value}
-        </p>
+        <p className="mt-1 truncate text-sm font-semibold text-foreground">{value}</p>
       </div>
     </div>
   );
 }
 
-export function InfoBoxGrid({
-  items,
-  className,
-}: {
-  items: InfoBoxProps[];
-  className?: string;
-}) {
+export function InfoBoxGrid({ items, className }: { items: InfoBoxProps[]; className?: string }) {
   return (
-    <div
-      className={cn(
-        "grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3",
-        className,
-      )}
-    >
+    <div className={cn("grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3", className)}>
       {items.map((it) => (
         <InfoBox key={it.label} {...it} />
       ))}

@@ -7,17 +7,9 @@ export interface RelatedLink {
   eyebrow?: string;
 }
 
-export function RelatedLinks({
-  items,
-  columns = 3,
-}: {
-  items: RelatedLink[];
-  columns?: 2 | 3;
-}) {
+export function RelatedLinks({ items, columns = 3 }: { items: RelatedLink[]; columns?: 2 | 3 }) {
   const grid =
-    columns === 2
-      ? "grid gap-4 sm:grid-cols-2"
-      : "grid gap-4 sm:grid-cols-2 lg:grid-cols-3";
+    columns === 2 ? "grid gap-4 sm:grid-cols-2" : "grid gap-4 sm:grid-cols-2 lg:grid-cols-3";
   return (
     <div className={grid}>
       {items.map((it) => (
@@ -31,13 +23,9 @@ export function RelatedLinks({
               {it.eyebrow}
             </p>
           )}
-          <h3 className="mt-2 text-base font-semibold leading-snug">
-            {it.title}
-          </h3>
+          <h3 className="mt-2 text-base font-semibold leading-snug">{it.title}</h3>
           {it.description && (
-            <p className="mt-2 flex-1 text-sm text-muted-foreground">
-              {it.description}
-            </p>
+            <p className="mt-2 flex-1 text-sm text-muted-foreground">{it.description}</p>
           )}
           <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-foreground/90">
             Öppna

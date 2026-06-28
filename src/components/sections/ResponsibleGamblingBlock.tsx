@@ -18,10 +18,9 @@ export function ResponsibleGamblingBlock() {
       </div>
 
       <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-        Spel ska vara underhållning. Sätt alltid insättnings-, förlust- och
-        tidsgränser innan du börjar spela, och pausa om spelandet inte längre
-        känns roligt. Casinon med svensk licens är skyldiga att erbjuda
-        verktyg för självkontroll och att hänvisa till oberoende stöd.
+        Spel ska vara underhållning. Sätt alltid insättnings-, förlust- och tidsgränser innan du
+        börjar spela, och pausa om spelandet inte längre känns roligt. Casinon med svensk licens är
+        skyldiga att erbjuda verktyg för självkontroll och att hänvisa till oberoende stöd.
       </p>
 
       <ul className="mt-5 space-y-2 text-sm">
@@ -36,8 +35,7 @@ export function ResponsibleGamblingBlock() {
             <ExternalLink className="h-3.5 w-3.5" aria-hidden />
           </a>
           <span className="ml-2 text-muted-foreground">
-            – stäng av dig själv från allt spel på svenska licensierade
-            sajter.
+            – stäng av dig själv från allt spel på svenska licensierade sajter.
           </span>
         </li>
         <li>
@@ -56,9 +54,7 @@ export function ResponsibleGamblingBlock() {
         </li>
       </ul>
 
-      <p className="mt-5 text-xs text-muted-foreground">
-        18+. Spela ansvarsfullt.
-      </p>
+      <p className="mt-5 text-xs text-muted-foreground">18+. Spela ansvarsfullt.</p>
     </div>
   );
 }

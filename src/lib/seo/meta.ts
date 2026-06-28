@@ -6,12 +6,7 @@
  * Both keep URLs relative while BASE_URL is empty.
  */
 
-import {
-  BASE_URL,
-  DEFAULT_OG_TYPE,
-  SITE_LOCALE,
-  SITE_NAME,
-} from "./site";
+import { BASE_URL, DEFAULT_OG_TYPE, SITE_LOCALE, SITE_NAME } from "./site";
 
 export interface BuildMetaInput {
   title: string;
@@ -40,14 +35,7 @@ export function buildCanonical(path: string) {
  * adding the canonical link separately via `buildCanonical(path)`.
  */
 export function buildMeta(input: BuildMetaInput) {
-  const {
-    title,
-    description,
-    path,
-    ogType = DEFAULT_OG_TYPE,
-    image,
-    noindex = false,
-  } = input;
+  const { title, description, path, ogType = DEFAULT_OG_TYPE, image, noindex = false } = input;
 
   const url = buildOgUrl(path);
 
