@@ -46,10 +46,10 @@ Governance priority: **Operating System > Engineering > Editorial > Design.**
 - `.lovable/` — Lovable workspace state.
 - `AGENTS.md` — template-safe git history guidance for Lovable-originated snapshots; don't force-push or rewrite published history.
 - `src/routeTree.gen.ts` — generated.
-- Anything under `docs/constitution/` — read-only mirror; see `implementation-boundaries.md`.
+- Anything under `docs/constitution/` — read-only template snapshots; see `implementation-boundaries.md`.
 
 ## When in doubt
 
-Default to the smallest correct change that follows the existing patterns. Prefer extending an existing component over creating a new one. If a request would require creating a new editorial component, stop — that needs an E2 amendment in Lovable memory first.
+Default to the smallest correct change that follows the existing patterns. Prefer extending an existing component over creating a new one. If a request would require creating a new editorial component, stop — that needs a deliberate E2 governance amendment first; if this repo is explicitly connected to Lovable, make that amendment in Lovable memory as configured.
 
 See `implementation-boundaries.md` for the explicit allow/forbid list.

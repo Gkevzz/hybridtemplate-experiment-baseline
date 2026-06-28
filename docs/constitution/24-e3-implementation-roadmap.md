@@ -1,6 +1,6 @@
-> Mirror snapshot of `mem://editorial/e3-implementation-roadmap`.
-> Canonical source inside Lovable: `mem://editorial/e3-implementation-roadmap`.
-> If this file conflicts with Lovable memory, Lovable memory wins.
+> Snapshot originally exported from Lovable memory: `mem://editorial/e3-implementation-roadmap`.
+> This template copy is not actively synced with Lovable unless explicitly configured.
+> Treat this checked-in file as the best available repo-local reference for this template.
 > Snapshot date: 2026-06-28.
 
 ---
@@ -11,7 +11,7 @@
 
 **Scope:** Constitutional roadmap only. No code, CSS, components, visual specs, copy, or new editorial principles.
 
-**Canonical persistence target (on later approval):** `mem://editorial/e3-implementation-roadmap`
+**Original Lovable persistence target in the source project:** `mem://editorial/e3-implementation-roadmap`
 
 **Operational status register (separate, non-constitutional):** `mem://editorial/e3-status`
 

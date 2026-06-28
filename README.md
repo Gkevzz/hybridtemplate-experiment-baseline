@@ -29,7 +29,7 @@ Vite serves on `http://localhost:8080`.
 
 This repository was created from a [Lovable](https://lovable.dev)-originated project snapshot. It is not assumed to be actively connected to Lovable unless explicitly configured. See `AGENTS.md` for template-safe git history guidance.
 
-The authoritative version of every constitutional document lives in **Lovable project memory (`mem://...`)**. Files under `docs/constitution/` are read-only snapshots taken on the date shown in each file header — they may drift from the canonical `mem://` source over time.
+The constitutional documents were originally exported from **Lovable project memory (`mem://...`)**. Files under `docs/constitution/` are read-only template snapshots taken on the date shown in each file header. This template copy is not actively synced with Lovable unless explicitly configured, so treat the checked-in files as the best available repo-local reference for this template.
 
 ## Environment
 

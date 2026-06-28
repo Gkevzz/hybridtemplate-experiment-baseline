@@ -1,6 +1,6 @@
-> Mirror snapshot of `mem://editorial/framework.md`.
-> Canonical source inside Lovable: `mem://editorial/framework.md`.
-> If this file conflicts with Lovable memory, Lovable memory wins.
+> Snapshot originally exported from Lovable memory: `mem://editorial/framework.md`.
+> This template copy is not actively synced with Lovable unless explicitly configured.
+> Treat this checked-in file as the best available repo-local reference for this template.
 > Snapshot date: 2026-06-28.
 
 ---

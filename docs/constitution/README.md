@@ -1,12 +1,12 @@
 # Constitution Snapshots
 
-Read-only mirror of HybridBonus constitutional documents.
+Read-only snapshots of HybridBonus constitutional documents originally exported from Lovable memory (`mem://...`).
 
-**Canonical source:** Lovable project memory (`mem://...`).
 **Snapshot date:** 2026-06-28.
-**If these files conflict with Lovable memory, Lovable memory wins.**
+**Lovable sync status:** This template copy is not actively synced with Lovable unless explicitly configured.
+**Repo-local status:** Treat these checked-in files as the best available repo-local reference for this template. Governance-changing edits must not be made casually and require deliberate approval.
 
-These snapshots exist so that external AI coding tools (Cursor, Claude Code, Codex, Aider, etc.) and human contributors working outside Lovable can read the constitution without access to `mem://`. They are not authoritative governance.
+These snapshots exist so that external AI coding tools (Cursor, Claude Code, Codex, Aider, etc.) and human contributors working outside Lovable can read the constitution without access to `mem://`.
 
 ## Reading order
 
@@ -42,4 +42,4 @@ The following entries are referenced in the Lovable Constitutional Index but do 
 - `mem://engineering/components-data`
 - `mem://design/system`
 
-Their content currently lives only as Core rules inside `mem://index.md` and inline within the engineering and design surfaces of other documents. Treat the Core rules in this directory's parent documentation (`docs/handoff/`) as the working summary until the canonical files exist.
+In the original Lovable source project, their content lived only as Core rules inside `mem://index.md` and inline within the engineering and design surfaces of other documents. Treat the Core rules in this directory's parent documentation (`docs/handoff/`) as the working summary for this template unless deliberately updated.

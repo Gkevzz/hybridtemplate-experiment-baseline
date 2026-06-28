@@ -1,13 +1,13 @@
-> Mirror snapshot of `mem://editorial/e3-status`.
-> Canonical source inside Lovable: `mem://editorial/e3-status`.
-> If this file conflicts with Lovable memory, Lovable memory wins.
+> Snapshot originally exported from Lovable memory: `mem://editorial/e3-status`.
+> This template copy is not actively synced with Lovable unless explicitly configured.
+> Treat this checked-in file as the best available repo-local reference for this template.
 > Snapshot date: 2026-06-28.
 
 ---
 
 # E3 — Operational Implementation Status Register
 
-This register is **operational, not constitutional**. It may be updated without amendment. It never contains constitutional rules. The constitutional roadmap lives at `mem://editorial/e3-implementation-roadmap`.
+This register is **operational, not constitutional**. It may be updated without amendment. It never contains constitutional rules. The constitutional roadmap was originally exported from `mem://editorial/e3-implementation-roadmap` in the source Lovable project.
 
 Allowed statuses (per E3 §11):
 
